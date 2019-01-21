@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+using NiuNiu.Common;
 using SqlSugar;
 using System;
 using System.Collections.Generic;
@@ -19,16 +20,16 @@ namespace NiuNiu.DAL
     public static class SqlSugarClientHelper
     {
         //加载appsetting.json
-        static IConfiguration configuration = new ConfigurationBuilder()
-         .SetBasePath(Directory.GetCurrentDirectory())
-         .AddJsonFile("appsettings.json").Build();
+        //static IConfiguration configuration = new ConfigurationBuilder()
+        // .SetBasePath(Directory.GetCurrentDirectory())
+        // .AddJsonFile("appsettings.json").Build();
 
-
+       public static string conn = Appsettings.app(new string[] { "AppSettings", "SqlConn", "MySqlConn" });//获取连接字符串
 
         /// <summary>
         ///连接字符串
         /// </summary>
-        private static readonly string conn = configuration["SqlConn:MySqlConn"];
+        //private static readonly string conn = configuration["SqlConn:MySqlConn"];
         public static SqlSugarClient SqlDBConnection
         {
             get => new SqlSugarClient(new ConnectionConfig()

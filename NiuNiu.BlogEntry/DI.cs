@@ -1,12 +1,15 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace NiuNiu.BlogEntry.Content
+namespace NiuNiu.BlogEntry
 {
-    using BLL;
-    using DAL;
     using IBLL;
+    using BLL;
     using IDAL;
-
+    using DAL;
     public static class DI
     {
         public static void AddScored(this IServiceCollection service)

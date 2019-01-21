@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <script src="~/js/vue.js"></script>
+    <script src="~/js/axios.js"></script>
+</head>
+<body>
+    <form id="app">
+        <p>
+            用户名:<input type="text" v-model="Name" />
+        </p>
+        <p>
+           密码: <input type="text" v-model="Pwd" />
+        </p>
+        <p>
+            <input type="button" v-on:click="login(Name,Pwd)" value="登录" />
+        </p>
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                contactsList:[]
+            },
+            methods: {
+                login: function (name, pwd) {
+                    axios.post('/Users/Login?Name='+name+'&Pwd='+pwd).then(
+                        (response) => {
+                            this.contactsList = [];
+                            if (response.data) {
+                                location.href = '/Users/Index';
+                                console.log(response.data);
+                            } 
+                        },
+                        (response) => {
+                            alert(response.status);
+                        }
+                    ).catch(function (response) {
+                        alert(response);
+                    });
+                }
+            }
+        });
+</script>

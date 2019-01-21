@@ -18,6 +18,12 @@ namespace NiuNiu.DAL
     public class UsersDAL : IUsersDAL
     {
 
+        SqlSugarClient sugar;
+        public UsersDAL()
+        {
+            if (sugar == null)
+                sugar= SqlSugarClientHelper.SqlDBConnection;
+        }
         /// <summary>
         /// 新增用户
         /// </summary>
@@ -27,10 +33,7 @@ namespace NiuNiu.DAL
         {
             try
             {
-                using (SqlSugarClient sugar = SqlSugarClientHelper.SqlDBConnection)
-                {
-                    return sugar.Insertable<Users>(t).ExecuteCommand() > 0;
-                }
+                 return sugar.Insertable<Users>(t).ExecuteCommand() > 0;
             }
             catch (Exception ex)
             {

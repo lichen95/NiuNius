@@ -8,10 +8,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NiuNiu.BlogEntry.Content;
 
 namespace NiuNiu.BlogEntry
 {
-
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -31,15 +31,22 @@ namespace NiuNiu.BlogEntry
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddScored();//使用DI注入
+
+            services.AddHttpContextAccessor1();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            //
+            app.UseStaticHttpContext();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

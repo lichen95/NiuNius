@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiuNiu.Entity", "NiuNiu.Entity\NiuNiu.Entity.csproj", "{7AAF63ED-A34B-4FAC-98F8-784B66E4D6C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NiuNiu.Entity", "NiuNiu.Entity\NiuNiu.Entity.csproj", "{7AAF63ED-A34B-4FAC-98F8-784B66E4D6C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiuNiu.DAL", "NiuNiu.DAL\NiuNiu.DAL.csproj", "{D9E0A9B4-9E89-4BEB-8822-47E6DEB325BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NiuNiu.DAL", "NiuNiu.DAL\NiuNiu.DAL.csproj", "{D9E0A9B4-9E89-4BEB-8822-47E6DEB325BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiuNiu.BLL", "NiuNiu.BLL\NiuNiu.BLL.csproj", "{0218FF5C-B1B3-45C0-836E-69545C6A7682}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NiuNiu.BLL", "NiuNiu.BLL\NiuNiu.BLL.csproj", "{0218FF5C-B1B3-45C0-836E-69545C6A7682}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiuNiu.IDAL", "NiuNiu.IDAL\NiuNiu.IDAL.csproj", "{5E01F226-5DFF-4EB8-84E9-B011E991D8BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NiuNiu.IDAL", "NiuNiu.IDAL\NiuNiu.IDAL.csproj", "{5E01F226-5DFF-4EB8-84E9-B011E991D8BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiuNiu.IBLL", "NiuNiu.IBLL\NiuNiu.IBLL.csproj", "{AE03174F-50D7-492A-A320-A1A17465E45B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NiuNiu.IBLL", "NiuNiu.IBLL\NiuNiu.IBLL.csproj", "{AE03174F-50D7-492A-A320-A1A17465E45B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiuNiu.BlogEntry", "NiuNiu.BlogEntry\NiuNiu.BlogEntry.csproj", "{173C00F9-542D-498E-BE0C-5B3C3DA599A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NiuNiu.BlogEntry", "NiuNiu.BlogEntry\NiuNiu.BlogEntry.csproj", "{173C00F9-542D-498E-BE0C-5B3C3DA599A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiuNiu.Common", "NiuNiu.Common\NiuNiu.Common.csproj", "{E29C7D59-7707-4828-B356-9B1782072EA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NiuNiu.Common", "NiuNiu.Common\NiuNiu.Common.csproj", "{E29C7D59-7707-4828-B356-9B1782072EA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
