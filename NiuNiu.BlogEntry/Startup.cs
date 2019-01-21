@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace NiuNiu.BlogEntry
 {
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -32,6 +33,8 @@ namespace NiuNiu.BlogEntry
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddScored();//使用DI注入
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

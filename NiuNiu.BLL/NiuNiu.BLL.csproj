@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\NiuNiu.Entity\NiuNiu.Entity.csproj" />
     <ProjectReference Include="..\NiuNiu.IBLL\NiuNiu.IBLL.csproj" />
+    <ProjectReference Include="..\NiuNiu.IDAL\NiuNiu.IDAL.csproj" />
   </ItemGroup>
 
 </Project>

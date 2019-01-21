@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NiuNiu.IDAL
+namespace NiuNiu.IBLL
 {
     /// <summary>
-    /// ** 描述：IDAL接口基类
+    /// ** 描述：IBLL接口基类
     /// ** 创始时间：2019-01-21
     /// ** 修改时间：-
     /// ** 作者：lc
     /// </summary>
-    public interface IBase<T> where T:class,new ()
+    /// </summary>
+    public interface IBase<T> where T:class,new()
     {
         /// <summary>
         /// 新增

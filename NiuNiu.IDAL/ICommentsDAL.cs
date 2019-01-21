@@ -11,7 +11,7 @@ namespace NiuNiu.IDAL
     /// ** 修改时间：-
     /// ** 作者：lc
     /// </summary>
-    public interface CommentsIDAL : IBase<Comments>
+    public interface ICommentsDAL : IBase<Comments>
     {
         /// <summary>
         /// 获取评论信息

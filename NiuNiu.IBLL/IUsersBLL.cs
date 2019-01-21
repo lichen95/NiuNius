@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NiuNiu.IDAL
+namespace NiuNiu.IBLL
 {
     using Entity;
     /// <summary>
-    /// ** 描述：用户DAL接口
+    /// ** 描述：用户BLL接口
     /// ** 创始时间：2019-01-21
     /// ** 修改时间：-
     /// ** 作者：lc
     /// </summary>
-    public interface UsersIDAL:IBase<Users>
+    public interface IUsersBLL : IBase<Users>
     {
         /// <summary>
         /// 获取用户信息
